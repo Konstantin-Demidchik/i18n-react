@@ -1,0 +1,48 @@
+@import "fonts.css";
+@import "./blocks/headers.scss";
+@import "~normalize.css";
+
+$accent: #4C85FF;;
+$fontsize: 16px;
+$textcolor: #3D4F9F;
+$lineheight: 1.65;
+$userfont: 'Quicksand', sans-serif;
+
+::placeholder {
+    color: #666;
+}
+	
+
+::selection {
+    background-color: $accent;
+	color: #fff;
+}
+
+
+input, textarea {
+    outline: none;
+	&:focus:required:invalid {
+        border-color: red;
+    }
+	&:required:valid {
+        border-color: green;
+    }
+}
+
+
+body {
+    font-family: $userfont;
+	font-size: $fontsize;
+	line-height: $lineheight;
+	color: $textcolor;
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.container {
+	margin: 0 auto;
+	max-height: 1218px;
+	padding-left: 20px;
+	padding-right: 20px;
+}

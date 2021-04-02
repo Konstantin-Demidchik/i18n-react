@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 80px;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #5E81FE;
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;
+        text-align: center;
+
+        color: #ffffff;
+        font-family: 'PasseroOne-Regular';
+        font-size: 24px;
+    }
+}
